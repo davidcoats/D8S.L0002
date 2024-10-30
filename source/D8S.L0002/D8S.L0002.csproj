@@ -12,4 +12,9 @@
     <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
     <RepositoryUrl>https://github.com/davidcoats/D8S.L0002.git</RepositoryUrl>
   </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\D8S.L0002.D002.X001\D8S.L0002.D002.X001.csproj" />
+    <ProjectReference Include="..\D8S.L0002.I001\D8S.L0002.I001.csproj" />
+    <ProjectReference Include="..\D8S.L0002.I002\D8S.L0002.I002.csproj" />
+  </ItemGroup>
 </Project>
