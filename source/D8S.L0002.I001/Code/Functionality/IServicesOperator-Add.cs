@@ -13,10 +13,18 @@ namespace D8S.L0002.I001
     [FunctionalityMarker]
     public partial interface IServicesOperator : IFunctionalityMarker
     {
+        /// <inheritdoc cref="N001.TemporaryDirectoryPathProvider"/>
+        public void Add_TemporaryDirectoryPathProvider_N001(
+            IServiceCollection services,
+            out ServiceToken<ITemporaryDirectoryPathProvider> temporaryDirectoryPathProvider_Token)
+        {
+            services.AddSingleton<ITemporaryDirectoryPathProvider, N001.TemporaryDirectoryPathProvider>();
+        }
+
         /// <inheritdoc cref="DropboxDirectoryPathProvider"/>
         public void Add_DropboxDirectoryPathProvider(
             IServiceCollection services,
-            out ServiceToken<IDropboxDirectoryPathProvider> ropboxDirectoryPathProvider_Token,
+            out ServiceToken<IDropboxDirectoryPathProvider> dropboxDirectoryPathProvider_Token,
             ServiceToken<IUserProfileDirectoryPathProvider> userProfileDirectoryPathProvider_Token)
         {
             services.AddSingleton<IDropboxDirectoryPathProvider, DropboxDirectoryPathProvider>();

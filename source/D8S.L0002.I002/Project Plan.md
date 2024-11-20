@@ -4,7 +4,9 @@ Service implementations library project, personal, netstandard2.1, limited depen
 Dependencies are limited to:
 
 	- D8S.L0002.L002
+	- D8S.L0002.D002.X001
 	- D8S.L0002.D002
+	- D8S.L0002.D001
 	- R5T.L0066
 	- R5T.T0248 - For ServiceToken<T> type.
 	- R5T.NG0002 - For Microsoft.Extensions.DependencyInjection types.

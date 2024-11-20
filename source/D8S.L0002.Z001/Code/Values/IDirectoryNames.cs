@@ -12,5 +12,10 @@ namespace D8S.L0002.Z001
         /// <para><value>Dropbox</value></para>
         /// </summary>
         public string Dropbox => "Dropbox";
+
+        /// <summary>
+        /// <para><value>Temp</value></para>
+        /// </summary>
+        public string Temp => "Temp";
     }
 }

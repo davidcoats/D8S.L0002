@@ -5,6 +5,7 @@ using Microsoft.Extensions.DependencyInjection;
 using R5T.T0132;
 using R5T.T0248;
 
+using D8S.L0002.D001;
 using D8S.L0002.D002;
 
 using OperatingSystem = D8S.L0002.T001.OperatingSystem;
@@ -15,6 +16,16 @@ namespace D8S.L0002.I002
     [FunctionalityMarker]
     public partial interface IServicesOperator : IFunctionalityMarker
     {
+        /// <inheritdoc cref="N001.TemporaryDirectoryPathProvider"/>
+        public void Add_TemporaryDirectoryPathProvider_N001(
+            IServiceCollection services,
+            out ServiceToken<ITemporaryDirectoryPathProvider> temporaryDirectoryPathProvider_Token,
+            ServiceToken<IExecutingOperatingSystemProvider> executingOperatingSystemProvider_Token,
+            ServiceToken<IUserProfileDirectoryPathProvider> userProfileDirectoryPathProvider_Token)
+        {
+            services.AddSingleton<ITemporaryDirectoryPathProvider, N001.TemporaryDirectoryPathProvider>();
+        }
+
         /// <inheritdoc cref="ExecutingOperatingSystemProvider"/>
         public void Add_ExecutingOperatingSystemProvider(
             IServiceCollection services,

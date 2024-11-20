@@ -16,6 +16,8 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.NG0002\source\R5T.NG0002\R5T.NG0002.csproj" />
     <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0248\source\R5T.T0248\R5T.T0248.csproj" />
+    <ProjectReference Include="..\D8S.L0002.D001\D8S.L0002.D001.csproj" />
+    <ProjectReference Include="..\D8S.L0002.D002.X001\D8S.L0002.D002.X001.csproj" />
     <ProjectReference Include="..\D8S.L0002.D002\D8S.L0002.D002.csproj" />
     <ProjectReference Include="..\D8S.L0002.L002\D8S.L0002.L002.csproj" />
   </ItemGroup>

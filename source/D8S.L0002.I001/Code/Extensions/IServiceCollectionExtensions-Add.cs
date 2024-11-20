@@ -11,6 +11,17 @@ namespace D8S.L0002.I001
 {
     public static partial class IServiceCollectionExtensions
     {
+        /// <inheritdoc cref="IServicesOperator.Add_TemporaryDirectoryPathProvider_N001(IServiceCollection, out ServiceToken{ITemporaryDirectoryPathProvider})"/>
+        public static IServiceCollection Add_TemporaryDirectoryPathProvider_N001(this IServiceCollection services,
+            out ServiceToken<ITemporaryDirectoryPathProvider> temporaryDirectoryPathProvider_Token)
+        {
+            Instances.ServicesOperator.Add_TemporaryDirectoryPathProvider_N001(
+                services,
+                out temporaryDirectoryPathProvider_Token);
+
+            return services;
+        }
+
         /// <inheritdoc cref="IServicesOperator.Add_DropboxDirectoryPathProvider(IServiceCollection, out ServiceToken{IDropboxDirectoryPathProvider}, ServiceToken{IUserProfileDirectoryPathProvider})"/>
         public static IServiceCollection Add_DropboxDirectoryPathProvider(this IServiceCollection services,
             out ServiceToken<IDropboxDirectoryPathProvider> dropboxDirectoryPathProvider_Token,

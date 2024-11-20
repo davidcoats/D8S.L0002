@@ -1,0 +1,17 @@
+using System;
+using System.Threading.Tasks;
+
+using R5T.T0064;
+
+
+namespace D8S.L0002.D001
+{
+    /// <summary>
+    /// Provides the path of the temporary directory.
+    /// </summary>
+    [ServiceDefinitionMarker]
+    public interface ITemporaryDirectoryPathProvider : IServiceDefinition
+    {
+        Task<string> Get_TemporaryDirectoryPath();
+    }
+}
