@@ -2,8 +2,8 @@ using System;
 
 using Microsoft.Extensions.DependencyInjection;
 
-using R5T.T0132;
-using R5T.T0248;
+using F10Y.T0002;
+using F10Y.T0016;
 
 using D8S.L0002.D001;
 using D8S.L0002.D002;
@@ -13,8 +13,8 @@ using OperatingSystem = D8S.L0002.T001.OperatingSystem;
 
 namespace D8S.L0002.I002
 {
-    [FunctionalityMarker]
-    public partial interface IServicesOperator : IFunctionalityMarker
+    [FunctionsMarker]
+    public partial interface IServicesOperator
     {
         /// <inheritdoc cref="N001.TemporaryDirectoryPathProvider"/>
         public void Add_TemporaryDirectoryPathProvider_N001(

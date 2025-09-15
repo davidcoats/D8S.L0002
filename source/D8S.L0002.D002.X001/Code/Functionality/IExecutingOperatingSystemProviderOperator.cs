@@ -1,13 +1,13 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0132;
+using F10Y.T0002;
 
 
 namespace D8S.L0002.D002.X001
 {
-    [FunctionalityMarker]
-    public partial interface IExecutingOperatingSystemProviderOperator : IFunctionalityMarker
+    [FunctionsMarker]
+    public partial interface IExecutingOperatingSystemProviderOperator
     {
         public async Task<T> Switch_OnExecutingOperatingSystem<T>(IExecutingOperatingSystemProvider executingOperatingSystemProvider,
             T windowsValue,

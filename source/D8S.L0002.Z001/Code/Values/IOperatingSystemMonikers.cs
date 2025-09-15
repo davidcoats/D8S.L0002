@@ -1,12 +1,12 @@
 using System;
 
-using R5T.T0131;
+using F10Y.T0003;
 
 
 namespace D8S.L0002.Z001
 {
     [ValuesMarker]
-    public partial interface IOperatingSystemMonikers : IValuesMarker
+    public partial interface IOperatingSystemMonikers
     {
         /// <summary>
         /// <para><value>Linux</value></para>

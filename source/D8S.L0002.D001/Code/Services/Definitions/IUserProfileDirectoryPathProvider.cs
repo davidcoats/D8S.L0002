@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 
 namespace D8S.L0002.D001
@@ -13,7 +13,7 @@ namespace D8S.L0002.D001
     /// Left up to implementers is whethere this is the current user, or on the current system.
     /// </remarks>
     [ServiceDefinitionMarker]
-    public interface IUserProfileDirectoryPathProvider : IServiceDefinition
+    public interface IUserProfileDirectoryPathProvider
     {
         Task<string> Get_UserProfileDirectoryPath();
     }

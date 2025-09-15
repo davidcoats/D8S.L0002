@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 using D8S.L0002.D002;
 
@@ -14,7 +14,7 @@ namespace D8S.L0002.I002
     /// An <see cref="IExecutingOperatingSystemProvider"/> implementation that is hard-coded to produce the <see cref="OperatingSystem.Mac"/> value.
     /// </summary>
     [ServiceImplementationMarker]
-    public class ExecutingOperatingSystemProvider_Mac : IServiceImplementation,
+    public class ExecutingOperatingSystemProvider_Mac :
         IExecutingOperatingSystemProvider
     {
         public Task<OperatingSystem> Get_ExecutingOperatingSystem()

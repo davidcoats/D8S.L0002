@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 using D8S.L0002.D002;
 
@@ -14,7 +14,7 @@ namespace D8S.L0002.I002
     /// An <see cref="IExecutingOperatingSystemProvider"/> implementation that provides a (configurable) fixed value.
     /// </summary>
     [ServiceImplementationMarker]
-    public class ExecutingOperatingSystemProvider_Fixed : IServiceImplementation,
+    public class ExecutingOperatingSystemProvider_Fixed :
         IExecutingOperatingSystemProvider
     {
         public OperatingSystem OperatingSystem { get; }

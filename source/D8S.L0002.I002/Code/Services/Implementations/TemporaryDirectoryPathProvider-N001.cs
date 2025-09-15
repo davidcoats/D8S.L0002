@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 using D8S.L0002.D001;
 using D8S.L0002.D002;
@@ -17,7 +17,7 @@ namespace D8S.L0002.I002.N001
     /// Works on both Windows and MacOS.
     /// </remarks>
     [ServiceImplementationMarker]
-    public class TemporaryDirectoryPathProvider : IServiceImplementation,
+    public class TemporaryDirectoryPathProvider :
         ITemporaryDirectoryPathProvider
     {
         public IExecutingOperatingSystemProvider ExecutingOperatingSystemProvider { get; }

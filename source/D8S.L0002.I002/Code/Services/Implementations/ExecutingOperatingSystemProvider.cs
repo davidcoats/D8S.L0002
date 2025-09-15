@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 using D8S.L0002.D002;
 
@@ -17,7 +17,7 @@ namespace D8S.L0002.I002
     /// Uses <see cref="L002.IOperatingSystemOperator.Get_OperatingSystem_Executing"/>.
     /// </remarks>
     [ServiceImplementationMarker]
-    public class ExecutingOperatingSystemProvider : IServiceImplementation,
+    public class ExecutingOperatingSystemProvider :
         IExecutingOperatingSystemProvider
     {
         public Task<OperatingSystem> Get_ExecutingOperatingSystem()

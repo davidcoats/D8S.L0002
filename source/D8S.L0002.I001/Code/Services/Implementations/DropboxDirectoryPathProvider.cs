@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 using D8S.L0002.D001;
 
@@ -12,7 +12,7 @@ namespace D8S.L0002.I001
     /// Implementation of <see cref="IDropboxDirectoryPathProvider"/> that uses the <see cref="IUserProfileDirectoryPathProvider"/> service.
     /// </summary>
     [ServiceImplementationMarker]
-    public class DropboxDirectoryPathProvider : IDropboxDirectoryPathProvider, IServiceImplementation
+    public class DropboxDirectoryPathProvider : IDropboxDirectoryPathProvider
     {
         private IUserProfileDirectoryPathProvider UserProfileDirectoryPathProvider { get; }
 

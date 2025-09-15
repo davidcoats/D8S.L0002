@@ -2,7 +2,7 @@
   <PropertyGroup Label="Main">
     <TargetFramework>netstandard2.1</TargetFramework>
     <OutputType>Library</OutputType>
-    <NoWarn>1573;1587;1591</NoWarn>
+    <NoWarn>1573;1587;1591;IDE0130</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup Label="Package">
@@ -14,7 +14,7 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0064\source\R5T.T0064\R5T.T0064.csproj" />
+    <ProjectReference Include="..\..\..\..\Functionairy\F10Y.T0015\source\F10Y.T0015\F10Y.T0015.csproj" />
     <ProjectReference Include="..\D8S.L0002.T001\D8S.L0002.T001.csproj" />
   </ItemGroup>
 </Project>

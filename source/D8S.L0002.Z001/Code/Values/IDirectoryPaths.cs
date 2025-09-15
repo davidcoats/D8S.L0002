@@ -1,12 +1,12 @@
 using System;
 
-using R5T.T0131;
+using F10Y.T0003;
 
 
 namespace D8S.L0002.Z001
 {
     [ValuesMarker]
-    public partial interface IDirectoryPaths : IValuesMarker
+    public partial interface IDirectoryPaths
     {
         /// <summary>
         /// <para><value>C:\Temp\</value></para>

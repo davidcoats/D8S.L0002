@@ -2,7 +2,7 @@
   <PropertyGroup Label="Main">
     <TargetFramework>netstandard2.1</TargetFramework>
     <OutputType>Library</OutputType>
-    <NoWarn>1573;1587;1591</NoWarn>
+    <NoWarn>1573;1587;1591;IDE0130</NoWarn>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <PropertyGroup Label="Package">
@@ -14,9 +14,9 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
   </PropertyGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\SafetyCone\R5T.L0066\source\R5T.L0066\R5T.L0066.csproj" />
-    <ProjectReference Include="..\..\..\..\SafetyCone\R5T.NG0002\source\R5T.NG0002\R5T.NG0002.csproj" />
-    <ProjectReference Include="..\..\..\..\SafetyCone\R5T.T0248\source\R5T.T0248\R5T.T0248.csproj" />
+    <ProjectReference Include="..\..\..\..\Functionairy\F10Y.L0000\source\F10Y.L0000\F10Y.L0000.csproj" />
+    <ProjectReference Include="..\..\..\..\Functionairy\F10Y.NG0008\source\F10Y.NG0008\F10Y.NG0008.csproj" />
+    <ProjectReference Include="..\..\..\..\Functionairy\F10Y.T0016\source\F10Y.T0016\F10Y.T0016.csproj" />
     <ProjectReference Include="..\D8S.L0002.D001\D8S.L0002.D001.csproj" />
     <ProjectReference Include="..\D8S.L0002.Z001\D8S.L0002.Z001.csproj" />
   </ItemGroup>

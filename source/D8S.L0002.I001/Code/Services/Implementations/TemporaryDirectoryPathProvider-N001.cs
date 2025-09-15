@@ -1,7 +1,7 @@
 using System;
 using System.Threading.Tasks;
 
-using R5T.T0064;
+using F10Y.T0015;
 
 using D8S.L0002.D001;
 
@@ -15,7 +15,7 @@ namespace D8S.L0002.I001.N001
     /// Only works on Windows machines.
     /// </remarks>
     [ServiceImplementationMarker]
-    public class TemporaryDirectoryPathProvider : IServiceImplementation,
+    public class TemporaryDirectoryPathProvider :
         ITemporaryDirectoryPathProvider
     {
         public Task<string> Get_TemporaryDirectoryPath()

@@ -1,14 +1,15 @@
 using System;
-using R5T.T0132;
+
+using F10Y.T0002;
 
 using OperatingSystem = D8S.L0002.T001.OperatingSystem;
 
 
 namespace D8S.L0002.L002
 {
-    [FunctionalityMarker]
-    public partial interface IOperatingSystemOperator : IFunctionalityMarker,
-        R5T.L0066.IOperatingSystemOperator
+    [FunctionsMarker]
+    public partial interface IOperatingSystemOperator :
+        F10Y.L0000.IOperatingSystemOperator
     {
         /// <summary>
         /// Get an enumeration value describing the executing operating system.
